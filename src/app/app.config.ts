@@ -1,4 +1,4 @@
-import { ApplicationConfig } from '@angular/core';
+import { ApplicationConfig, provideAppInitializer } from '@angular/core';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {
   provideRouter,
@@ -10,6 +10,7 @@ import {
 } from '@angular/router';
 import { IconSetService } from '@coreui/icons-angular';
 import { routes } from './app.routes';
+import { initFirebaseAnalytics } from './core/firebase';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -26,7 +27,8 @@ export const appConfig: ApplicationConfig = {
       withHashLocation()
     ),
     IconSetService,
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideAppInitializer(() => { void initFirebaseAnalytics(); })
   ]
 };
 

@@ -1,6 +1,6 @@
 {
-  "name": "coreui-free-angular-admin-template",
-  "version": "5.6.24",
+  "name": "CRM-IDV",
+  "version": "1.0.0",
   "copyright": "Copyright 2026 creativeLabs Łukasz Holeczek",
   "license": "MIT",
   "author": "The CoreUI Team (https://github.com/orgs/coreui/people) and contributors",
@@ -39,6 +39,7 @@
     "@coreui/icons-angular": "~5.6.24",
     "@coreui/utils": "^2.0.2",
     "chart.js": "^4.5.1",
+    "firebase": "^13.4.0",
     "ngx-scrollbar": "^13.0.3",
     "rxjs": "~7.8.2",
     "tslib": "^2.8.1",
